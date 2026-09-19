@@ -1,0 +1,94 @@
+/* Component-specific shared styles that aren't co-located */
+
+.stat-card {
+  text-align: center;
+  padding: 24px;
+}
+.stat-card .stat-value {
+  font-size: clamp(2rem, 3vw, 2.75rem);
+  font-weight: 800;
+  color: var(--color-primary);
+  line-height: 1;
+}
+.stat-card .stat-label {
+  color: var(--color-text-muted);
+  margin-top: 8px;
+  font-size: 0.95rem;
+}
+
+.icon-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: var(--color-primary-light);
+  color: var(--color-primary-dark);
+  flex-shrink: 0;
+}
+
+/* Progress */
+.progress-bar {
+  height: 10px;
+  width: 100%;
+  border-radius: var(--radius-pill);
+  background: var(--color-border);
+  overflow: hidden;
+}
+.progress-bar > span {
+  display: block;
+  height: 100%;
+  border-radius: var(--radius-pill);
+  background: var(--color-primary);
+  transition: width 700ms ease;
+}
+
+/* Toast */
+.toast {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--color-navy);
+  color: #fff;
+  padding: 14px 22px;
+  border-radius: var(--radius-pill);
+  box-shadow: var(--shadow-lg);
+  z-index: 300;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+}
+
+/* CTA Section */
+.cta-section {
+  background: linear-gradient(120deg, var(--color-primary-light), var(--color-peach));
+  border-radius: var(--radius-lg);
+  padding: clamp(40px, 6vw, 72px);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  justify-content: center;
+}
+
+/* Page header */
+.page-header {
+  padding-top: clamp(48px, 7vw, 96px);
+  padding-bottom: clamp(24px, 4vw, 48px);
+  text-align: center;
+}
+.page-header .stack {
+  align-items: center;
+  max-width: 760px;
+  margin-inline: auto;
+}

@@ -1,0 +1,44 @@
+:root {
+  /* Brand */
+  --color-primary: #168A9A;
+  --color-primary-dark: #0D6572;
+  --color-primary-light: #DDF4F5;
+
+  --color-navy: #15253D;
+  --color-text: #243247;
+  --color-text-muted: #667085;
+
+  --color-background: #FAF9F6;
+  --color-white: #FFFFFF;
+
+  --color-coral: #F28C78;
+  --color-coral-light: #FCE3DD;
+
+  --color-lavender: #EEE8FF;
+  --color-blue-soft: #E4F4FA;
+  --color-mint: #E5F5EE;
+  --color-peach: #FFF0E8;
+
+  --color-border: #E7E9ED;
+
+  --shadow-sm: 0 4px 16px rgba(21, 37, 61, 0.06);
+  --shadow-md: 0 12px 35px rgba(21, 37, 61, 0.09);
+  --shadow-lg: 0 20px 60px rgba(21, 37, 61, 0.12);
+
+  /* Stage colors */
+  --past: #8C78D8;
+  --past-bg: #F0ECFF;
+  --present: #2797A6;
+  --present-bg: #E5F6F7;
+  --future: #ED856E;
+  --future-bg: #FFF0EA;
+
+  /* Layout */
+  --container: 1240px;
+  --radius-sm: 12px;
+  --radius-md: 16px;
+  --radius-lg: 28px;
+  --radius-pill: 999px;
+
+  --transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease, color 180ms ease, border-color 180ms ease;
+}

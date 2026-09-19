@@ -1,0 +1,26 @@
+.feature-card {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  height: 100%;
+}
+.feature-card h4 {
+  margin-top: 4px;
+}
+
+.icon-badge.tone-past {
+  background: var(--past-bg);
+  color: var(--past);
+}
+.icon-badge.tone-present {
+  background: var(--present-bg);
+  color: var(--present);
+}
+.icon-badge.tone-future {
+  background: var(--future-bg);
+  color: var(--future);
+}
+.icon-badge.tone-coral {
+  background: var(--color-coral-light);
+  color: var(--color-coral);
+}

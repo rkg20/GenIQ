@@ -1,0 +1,48 @@
+.journey-card {
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  height: 100%;
+  border: 1px solid rgba(21, 37, 61, 0.05);
+  transition: var(--transition);
+}
+.journey-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+.journey-card__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.journey-card__badge {
+  font-size: 2rem;
+  font-weight: 800;
+}
+.journey-card__stage {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.8rem;
+}
+.journey-card__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 6px;
+}
+.journey-card__list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+  color: var(--color-text);
+}
+.journey-card__list .dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}

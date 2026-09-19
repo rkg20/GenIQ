@@ -1,0 +1,27 @@
+.audience-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+.audience-img {
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+.audience-hero-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+@media (max-width: 820px) {
+  .audience-split {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+}

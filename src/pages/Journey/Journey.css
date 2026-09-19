@@ -1,0 +1,135 @@
+.journey-indicator {
+  position: sticky;
+  top: 84px;
+  z-index: 50;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px;
+}
+.journey-indicator__item {
+  padding: 8px 18px;
+  border-radius: var(--radius-pill);
+  font-weight: 700;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+}
+.journey-indicator__item.is-past {
+  color: var(--past);
+}
+.journey-indicator__item.is-present {
+  color: var(--present);
+}
+.journey-indicator__item.is-future {
+  color: var(--future);
+}
+
+.stage {
+  scroll-margin-top: 150px;
+}
+.stage--past {
+  background: var(--past-bg);
+}
+.stage--present {
+  background: var(--present-bg);
+}
+.stage--future {
+  background: var(--future-bg);
+}
+.stage__head {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  margin-bottom: 40px;
+  max-width: 820px;
+}
+.stage__badge {
+  font-size: 2.6rem;
+  font-weight: 800;
+  line-height: 1;
+}
+.stage--past .stage__badge,
+.stage--past .stage__label {
+  color: var(--past);
+}
+.stage--present .stage__badge,
+.stage--present .stage__label {
+  color: var(--present);
+}
+.stage--future .stage__badge,
+.stage--future .stage__label {
+  color: var(--future);
+}
+.stage__label {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.8rem;
+}
+.stage__grid {
+  align-items: stretch;
+}
+.stage__card {
+  background: var(--color-white);
+  border-radius: var(--radius-md);
+  padding: 26px;
+  box-shadow: var(--shadow-sm);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.stage__list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.stage__list li {
+  padding-left: 18px;
+  position: relative;
+  color: var(--color-text);
+}
+.stage__list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 9px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--color-primary);
+}
+.stage__role {
+  color: var(--color-text-muted);
+}
+.stage__role strong {
+  color: var(--color-navy);
+}
+.stage__assess {
+  font-size: 0.9rem;
+  margin-top: auto;
+}
+.stage__outcome {
+  margin-top: 32px;
+  background: var(--color-white);
+  border-radius: var(--radius-md);
+  padding: 20px 26px;
+  box-shadow: var(--shadow-sm);
+  font-size: 1.05rem;
+}
+.stage__outcome strong {
+  color: var(--color-primary);
+}
+
+@media (max-width: 600px) {
+  .journey-indicator {
+    top: 72px;
+  }
+  .stage__head {
+    gap: 14px;
+  }
+}
